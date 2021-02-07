@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>合成大猪头</title>
+  <title>合成小芝麻</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -85,7 +85,18 @@
    <div id="loadingImg" style="top:45%;width: 100%;position:absolute; ">
     <img src="res/loading.gif" width="7%" height="7%" />
   </div>
- 
+  
+     <!-- 判断浏览器是否屏蔽广告 -->
+  <script src="http://demo.jb51.net/js/2015/adview_pic_cpc_cpm_cpa_guanggao_gg_ads_300x250.js" type="text/javascript"></script> 
+	<script type="text/javascript">
+	
+	 var killAdT = typeof(killads);
+		<!-- if (typeof(killads)=='undefined'){ -->
+			<!-- alert('广告被过滤'); -->
+			<!-- } -->
+	</script>
+   
+  
   
   
 <!--<div align="center" style="font-size: 10px;color: dimgrey">advertisement</div>-->
@@ -110,7 +121,19 @@
 //        console.log("window.navigator.language",window.navigator.language);
 
         if( window.navigator.language=="zh-CN" ||window.navigator.language=="zh-cn"){
-            document.title = "小游戏：合成大猪头";
+            document.title = "小游戏：合成小芝麻";
+        }else  if(window.navigator.language == "zh-TW" ){
+            document.title = "小遊戲：合成小芝麻";
+        }else  if(window.navigator.language == "zh-HK" ){
+            document.title = "小遊戲：合成小芝麻";
+        }else  if(window.navigator.language == "ko-KR"){
+            document.title = "작은 놀이：합성 깨";
+        }else  if(window.navigator.language == "ja-JP"){
+            document.title = "ミニゲーム：合成ゴマ";
+        }else  if(window.navigator.language == "th-TH"){
+            document.title = "เกมเล็กๆ：เมล็ดงาสังเคราะห์";
+        }else{
+            document.title = "Little game：Synthetic sesame";
         }
 
 
